@@ -1,0 +1,32 @@
+<div class="page-container">
+  <header id="crew-header">
+    <div class="dark-overlay">
+      <div class="crew-inner">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center text-light">
+                <h1 class="display-4">The Crew</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="person-container">
+    <div class="row mx-2">
+      <div class="col-sm-4 my-2" *ngFor="let person of crew">
+        <div class="card h-100">
+          <img src="{{ person.Img }}" alt="" class="card-img-top">
+          <div class="card-body d-flex flex-column">
+            <img class="country-flag" src="http://www.countryflags.io/{{ person.CountryCode }}/shiny/64.png" alt="{{ person.Country }}'s flag'">
+            <h4 class="card-title text-center">{{ person.Name }}</h4>
+            <p class="card-text">{{ person.Bio}}</p>
+            <button class="btn btn-info mt-auto">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

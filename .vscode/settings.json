@@ -1,0 +1,14 @@
+{
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "Material Theme Darker",
+  "workbench.iconTheme": "eq-material-theme-icons",
+  "workbench.colorCustomizations": {
+    "[Material Theme Darker]": {
+      "sideBarSectionHeader.background": "#2e3a41",
+      "sideBarSectionHeader.foreground": "#efffff",
+      "editorHoverWidget.background": "#1a2327",
+      "panel.border": "#627a87",
+      "sideBar.border": "#627a87"
+    }
+  }
+}

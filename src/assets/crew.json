@@ -1,0 +1,44 @@
+[
+  {
+    "Name": "Ricky Arnold",
+    "Img": "http://spaceflight101.com/iss/wp-content/uploads/sites/37/2018/02/ArnoldGCTC-683x1024.jpg",
+    "Country": "United States of America",
+    "CountryCode": "US",
+    "Bio": "Richard R. Arnold II was selected as an astronaut by NASA in May 2004. The Maryland native worked in the marine sciences and as a teacher in his home state, as well as in countries such as Morocco, Saudi Arabia, and Indonesia. He accumulated 12 days, 19 hours and 29 minutes in space during the STS-119 mission. The mission objective for the Space Shuttle Discovery was to deliver the final pair of power-generating solar array wings and a truss element for the International Space Station. While onboard station, he conducted 12 hours and 34 minutes of spacewalks"
+  },
+  {
+    "Name": "Oleg Artemyev",
+    "Img": "http://www.spacefacts.de/bios/portraits_hi/cosmonauts/artemyev_oleg.jpg",
+    "Country": "Russia",
+    "CountryCode": "RU",
+    "Bio": "Oleg Germanovich Artemyev is a Russian Cosmonaut for the Russian Federal Space Agency. He was selected as part of the RKKE-15 Cosmonaut group in 2003. He was a Flight engineer of Expedition 39 and 40 to the International Space Station, and in 2018 he returned to space as the Commander of Soyuz MS-08."
+  },
+  {
+    "Name": "Drew Feustel",
+    "Img": "http://spaceflight101.com/iss/wp-content/uploads/sites/37/2018/02/FeustelGCTC-683x1024.jpg",
+    "Country": "United States of America",
+    "CountryCode": "US",
+    "Bio": "Andrew J. Feustel was selected by NASA in 2000.  He has been assigned to Expedition 55/56, scheduled to launch in March 2018. The Lake Orion, Michigan native has a Ph.D. in the Geological Sciences, specializing in Seismology, and is a veteran of two spaceflights.  In 2009, Dr. Feustel served on STS-125.  This mission launched on Atlantis and was the fifth and final mission to service the Hubble Space Telescope that improved the observatory's capabilities through 2014.  Dr. Feustel also served on STS-134, launching on Endeavour to deliver the Alpha Magnetic Spectrometer and an ExPress Logistics Carrier to the International Space Station.  Dr. Feustel has logged more than 29 days in space with over 42 hours in spacewalks. He is currently a part of the Expedition 55 crew that launched to the International Space Station in March 2018."
+  },
+  {
+    "Name": "Norishige Kanai",
+    "Img": "http://iss.jaxa.jp/en/astro/images/kanai.jpg",
+    "Country": "Japan",
+    "CountryCode": "JP",
+    "Bio": "Norishige Kanai was born in 1976 in Tokyo and then brought up in Chiba. He graduated from National Defense Medical College (Hospital) in March 2002. After graduation, he worked as a surgeon and a Diving Medical Officer at National Defense Medical College (Hospital), Japan Self Defense Force Ohminato Hospital, Japan Self Defense Force Hospital Kure, and the 1st Service School of the Japan Maritime Self Defense Force."
+  },
+  {
+    "Name": "Commander Anton Shkaplerov",
+    "Img": "https://www.nasa.gov/sites/default/files/jsc2014e088154.jpg",
+    "Country": "United States of America",
+    "CountryCode": "RU",
+    "Bio": "Decorated Russian cosmonaut who's completed three missions and has been the commander of the International Space Station. He was a Russian Air Force pilot until 2003 when he entered the Gagarin Cosmonaut Training Center as a test-cosmonaut."
+  },
+  {
+    "Name": "Scott Tingle",
+    "Img": "http://www.spacefacts.de/bios/portraits_hi/astronauts/tingle_scott.jpg",
+    "Country": "United States of America",
+    "CountryCode": "US",
+    "Bio": "Scott D. Tingle was selected by NASA in 2009.  Raised in Randolph, Massachusetts, he earned a Bachelor of Science in Mechanical Engineering from Southeastern Massachusetts University, and a Master of Science in Mechanical Engineering from Purdue University, West Lafayette, Indiana.  Following graduate school, Captain Tingle spent three years with the Aerospace Corporation, El Segundo, California, as a member of technical staff in their Propulsion Department; and was commissioned as a naval officer in 1991. He is currently a part of the Expedition 54/55 crew that launched to the International Space Station in December 2017."
+  }
+]
