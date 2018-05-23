@@ -3,7 +3,7 @@
     Current Astronauts in Space
   </div>
   <div class="card-body">
-    <ul *ngIf="!person">
+    <ul *ngIf="astronauts">
       <li *ngFor="let person of astronauts.people">
         <span style="font-weight:bold;">{{ person.name }}</span> on the {{ person.craft }}
       </li>
