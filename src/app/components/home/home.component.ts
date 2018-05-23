@@ -15,12 +15,10 @@ import { IssNow } from '../../classes/iss-Now';
 
 export class HomeComponent implements OnInit {
   public issNowData: IssNow;
-  private display: boolean;
   private alive: boolean;
   private interval: number;
 
   constructor(private _IssLocationService: IssLocationService) {
-    this.display = false;
     this.alive = true;
     this.interval = 10000;
   }
@@ -32,10 +30,6 @@ export class HomeComponent implements OnInit {
         this._IssLocationService.getLocation()
           .subscribe((data) => {
             this.issNowData = data;
-            if (!this.display) {
-              this.display = true;
-            }
-            console.log(this.issNowData);
           });
       });
   }

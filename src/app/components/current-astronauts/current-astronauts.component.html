@@ -1,0 +1,13 @@
+<div class="card box-shadow">
+  <div class="card-header text-center">
+    Current Astronauts in Space
+  </div>
+  <div class="card-body">
+    <ul *ngIf="!person">
+      <li *ngFor="let person of astronauts.people">
+        <span style="font-weight:bold;">{{ person.name }}</span> on the {{ person.craft }}
+      </li>
+    </ul>
+    <button class="btn btn-info btn-block" routerLink="/crew">More about the Crew</button>
+  </div>
+</div>
