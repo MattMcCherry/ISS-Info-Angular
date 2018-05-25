@@ -6,8 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title: string = 'Iss Locator';
-  isCollapsed: boolean = true;
+  title: String = 'Iss Locator';
+  isCollapsed: Boolean = true;
+  lightModeActive: Boolean;
 
   constructor() { }
 

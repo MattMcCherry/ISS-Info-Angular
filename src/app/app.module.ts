@@ -22,6 +22,7 @@ import { GoogleMapComponent } from './components/google-map/google-map.component
 import { GeonamesFlagComponent } from './components/geonames-flag/geonames-flag.component';
 import { IssfactsComponent } from './components/issfacts/issfacts.component';
 import { CurrentAstronautsComponent } from './components/current-astronauts/current-astronauts.component';
+import { NavComponent } from './components/nav/nav.component';
 
 
 const appRoutes: Routes = [
@@ -43,7 +44,8 @@ const appRoutes: Routes = [
     GoogleMapComponent,
     GeonamesFlagComponent,
     IssfactsComponent,
-    CurrentAstronautsComponent
+    CurrentAstronautsComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,

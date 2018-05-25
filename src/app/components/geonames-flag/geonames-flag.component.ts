@@ -20,7 +20,7 @@ export class GeonamesFlagComponent {
     if (this.issNowData !== undefined) {
       this._GeonamesService.getCountry(this.issNowData.iss_position.latitude, this.issNowData.iss_position.longitude).subscribe(response => {
         this.geoNamesInfo = response;
-        if (this.geoNamesInfo.status === undefined) {
+        if (this.geoNamesInfo.status !== undefined) {
           this.flagImage = 'http://www.countryflags.io/' + this.geoNamesInfo.countryCode + '/shiny/64.png';
           this.currentCountry = this.geoNamesInfo.countryName;
         }

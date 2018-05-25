@@ -9,7 +9,12 @@
     </a>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01" [collapse]=isCollapsed>
       <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-5">
-        <app-theme-slider class="nav-item"></app-theme-slider>
+        <div class="slidecontainer" class="nav-item">
+          <input (change)="updateValue()" type="range" min="0" max="1" value="0" class="slider" id="myRange">
+          <p>Value:
+            <span id="demo"></span>
+          </p>
+        </div>
         <li class="nav-item" routerLinkActive="active">
           <a class="nav-link" routerLink='/home'>Home
           </a>
