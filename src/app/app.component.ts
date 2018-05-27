@@ -1,18 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ThemeService } from './services/theme.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  providers: [ThemeService]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title: String = 'Iss Locator';
   isCollapsed: Boolean = true;
-  lightModeActive: Boolean;
+  lightModeStatus: Boolean;
 
-  constructor() { }
+  constructor(private _ThemeService: ThemeService) {
+    this._ThemeService.lightModeState.subscribe(value => {
+      this.lightModeStatus = value;
+    });
+  }
 
-  toggleMenu() {
+  ngOnInit() { }
+
+  toggleMenu(): void {
     this.isCollapsed = !this.isCollapsed;
+  }
+
+  updateValue(): void {
+    this._ThemeService.lightModeState.next(!this.lightModeStatus);
   }
 }

@@ -6,9 +6,16 @@ nav {
 }
 
 .nav-item:hover {
-  color: rgba(255, 255, 255, .25);
   border-bottom: 3px solid;
   margin-bottom: -3px;
+}
+
+.navbar-dark .nav-item:hover {
+  color: rgba(255, 255, 255, .25);
+}
+
+.navbar-light .nav-item:hover {
+  color: rgba(167, 110, 18, 0.25)
 }
 
 .nav-item {
@@ -16,9 +23,16 @@ nav {
 }
 
 .nav-item.active {
-  color: #fff;
   border-bottom: 3px solid;
   margin-bottom: -3px;
+}
+
+.navbar-dark .nav-item.active {
+  color: #fff;
+}
+
+.navbar-light .nav-item.active {
+  color: rgba(167, 110, 18, 0.9)
 }
 
 .navbar-brand {
@@ -28,4 +42,8 @@ nav {
 .main-container {
   min-height: 100vh;
   height: 800px;
+}
+
+.card.bg-dark {
+  background: rgba(38,45,51,.75) !important;
 }

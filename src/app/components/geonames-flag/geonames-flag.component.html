@@ -1,4 +1,4 @@
-<div class="card box-shadow h-100">
+<div class="card box-shadow h-100" [ngClass]="{ 'bg-dark':!lightModeStatus }">
   <div class="card-header">Closest Country</div>
   <div class="card-body d-flex flex-column justify-content-center mb-4">
     <h5 *ngIf="flagImage == undefined">Country not found yet!</h5>

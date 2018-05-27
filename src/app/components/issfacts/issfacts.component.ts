@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FactsService } from '../../services/facts.service';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'app-issfacts',
@@ -7,8 +8,12 @@ import { FactsService } from '../../services/facts.service';
 })
 export class IssfactsComponent implements OnInit {
   private facts: string[];
+  lightModeStatus: Boolean;
 
-  constructor(private _FactsService: FactsService) {
+  constructor(private _FactsService: FactsService, private _ThemeService: ThemeService) {
+    this._ThemeService.lightModeState.subscribe(value => {
+      this.lightModeStatus = value;
+    });
   }
 
   ngOnInit() {

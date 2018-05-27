@@ -4,9 +4,9 @@ import { BehaviorSubject } from 'rxjs';
 @Injectable()
 export class ThemeService {
 
-  lightModeStatus: BehaviorSubject<boolean>;
+  lightModeState: BehaviorSubject<boolean>;
 
   constructor() {
-    this.lightModeStatus = new BehaviorSubject<boolean>(false);
+    this.lightModeState = new BehaviorSubject<boolean>(false);
   }
 }

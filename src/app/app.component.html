@@ -1,3 +1,37 @@
-<app-nav (lightModeActive)="lightModeStatus($event)"></app-nav>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<div [ngClass]="{ 'bg-light':lightModeStatus, 'bg-dark':!lightModeStatus, 'text-muted':lightModeStatus }" class="site-container">
+  <nav [ngClass]="{ 'navbar-light':lightModeStatus, 'navbar-dark':!lightModeStatus }" class="navbar navbar-expand-lg shadow-lg">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+        aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand ml-5" href="#">
+        ISS Info
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01" [collapse]=isCollapsed>
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 mr-5">
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink='/home'>Home
+            </a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink='/crew'>Crew</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink='/about'>About</a>
+          </li>
+          <div class="slidecontainer d-none d-lg-block">
+            <span class="slider-dark" [ngClass]="{ 'slider-text-light':lightModeStatus }">Dark</span>
+            <label class="switch">
+              <input (change)="updateValue()" type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <span class="slider-light" [ngClass]="{ 'slider-text-light':lightModeStatus }">Light</span>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+  <app-footer [ngClass]="{ 'text-muted': lightModeStatus }"></app-footer>
+</div>
