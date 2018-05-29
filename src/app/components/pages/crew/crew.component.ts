@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Crew } from '../../classes/crew'
-import { CrewService } from '../../services/crew.service';
-import { ThemeService } from '../../services/theme.service';
+import { Crew } from '../../../classes/crew'
+import { CrewService } from '../../../services/crew.service';
+import { ThemeService } from '../../../services/theme.service';
 
 @Component({
   selector: 'app-crew',

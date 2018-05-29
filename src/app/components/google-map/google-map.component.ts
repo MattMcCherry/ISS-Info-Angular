@@ -11,6 +11,7 @@ import { IssNow } from '../../classes/iss-Now';
 
 export class GoogleMapComponent {
   @Input() issNowData: IssNow;
+  @Input() isFullPage: boolean;
   @ViewChild('gmap') gmapElement: any;
   private map: google.maps.Map;
   private cLat: string;

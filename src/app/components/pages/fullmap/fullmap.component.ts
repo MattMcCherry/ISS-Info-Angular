@@ -1,19 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-
 import 'rxjs/add/operator/takeWhile';
 import { TimerObservable } from "rxjs/observable/TimerObservable";
 import { Observable } from "rxjs";
-
-import { IssLocationService } from '../../services/iss-location.service';
-import { IssNow } from '../../classes/iss-Now';
+import { IssLocationService } from '../../../services/iss-location.service';
+import { IssNow } from '../../../classes/iss-Now';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-fullmap',
+  templateUrl: './fullmap.component.html',
+  styleUrls: ['./fullmap.component.scss']
 })
-
-export class HomeComponent implements OnInit {
+export class FullmapComponent implements OnInit {
   public issNowData: IssNow;
   private alive: boolean;
   private interval: number;

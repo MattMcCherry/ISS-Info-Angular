@@ -14,14 +14,15 @@ import { PeopleinspaceService } from './services/peopleinspace.service';
 import { FactsService } from './services/facts.service';
 
 import { MissionsComponent } from './components/missions/missions.component';
-import { AboutComponent } from './components/about/about.component';
-import { CrewComponent } from './components/crew/crew.component';
+import { AboutComponent } from './components/pages/about/about.component';
+import { CrewComponent } from './components/pages/crew/crew.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HomeComponent } from './components/home/home.component';
+import { HomeComponent } from './components/pages/home/home.component';
 import { GoogleMapComponent } from './components/google-map/google-map.component';
 import { GeonamesFlagComponent } from './components/geonames-flag/geonames-flag.component';
 import { IssfactsComponent } from './components/issfacts/issfacts.component';
 import { CurrentAstronautsComponent } from './components/current-astronauts/current-astronauts.component';
+import { FullmapComponent } from './components/pages/fullmap/fullmap.component';
 
 
 const appRoutes: Routes = [
@@ -29,6 +30,7 @@ const appRoutes: Routes = [
   { path: 'crew', component: CrewComponent },
   { path: 'missions', component: MissionsComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'map', component: FullmapComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
@@ -43,7 +45,8 @@ const appRoutes: Routes = [
     GoogleMapComponent,
     GeonamesFlagComponent,
     IssfactsComponent,
-    CurrentAstronautsComponent
+    CurrentAstronautsComponent,
+    FullmapComponent
   ],
   imports: [
     BrowserModule,
