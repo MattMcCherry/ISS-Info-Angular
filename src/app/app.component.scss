@@ -44,7 +44,7 @@ input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
-  background-color: rgba(167, 110, 18, 0.5);
+  background-color: rgba(112, 86, 151, 0.9);
 }
 
 /* Rounded sliders */
@@ -79,7 +79,7 @@ span.slider-light {
 }
 
 span.slider-text-light {
-  color: rgba(167, 110, 18, 0.5);
+  color: rgba(112, 86, 151, 0.9);
 }
 
 span.slider-text-dark {

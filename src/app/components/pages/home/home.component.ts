@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 import 'rxjs/add/operator/takeWhile';
 import { TimerObservable } from "rxjs/observable/TimerObservable";
-import { Observable } from "rxjs";
 
 import { IssLocationService } from '../../../services/iss-location.service';
 import { IssNow } from '../../../classes/iss-Now';
